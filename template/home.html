@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="home">
+    <div class="hero-content">
+        <h1>Design the Future <br><span style="color:var(--primary)">with Nexus</span></h1>
+        <p>We bridge the gap between complex technology and intuitive user experiences. Our mission is to empower brands with digital excellence.</p>
+        <div style="display:flex; gap:1rem; justify-content:center;">
+            <button style="width:auto; padding: 1rem 2rem;" onclick="location.href='{{ url_for('services') }}'">Explore Services</button>
+            <button style="width:auto; padding: 1rem 2rem; background:#e2e8f0; color:var(--dark)" onclick="location.href='{{ url_for('contact') }}'">Get in Touch</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
